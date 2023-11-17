@@ -1,0 +1,3 @@
+/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/CMakeFiles/MYGAME.dir
+/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/CMakeFiles/edit_cache.dir
+/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/CMakeFiles/rebuild_cache.dir
