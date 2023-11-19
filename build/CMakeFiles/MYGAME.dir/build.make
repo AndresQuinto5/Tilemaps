@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations
+CMAKE_SOURCE_DIR = /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build
+CMAKE_BINARY_DIR = /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MYGAME.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/MYGAME.dir/progress.make
 include CMakeFiles/MYGAME.dir/flags.make
 
 CMakeFiles/MYGAME.dir/src/main.cpp.o: CMakeFiles/MYGAME.dir/flags.make
-CMakeFiles/MYGAME.dir/src/main.cpp.o: /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/main.cpp
+CMakeFiles/MYGAME.dir/src/main.cpp.o: /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/main.cpp
 CMakeFiles/MYGAME.dir/src/main.cpp.o: CMakeFiles/MYGAME.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MYGAME.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MYGAME.dir/src/main.cpp.o -MF CMakeFiles/MYGAME.dir/src/main.cpp.o.d -o CMakeFiles/MYGAME.dir/src/main.cpp.o -c /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MYGAME.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MYGAME.dir/src/main.cpp.o -MF CMakeFiles/MYGAME.dir/src/main.cpp.o.d -o CMakeFiles/MYGAME.dir/src/main.cpp.o -c /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/main.cpp
 
 CMakeFiles/MYGAME.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MYGAME.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/main.cpp > CMakeFiles/MYGAME.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/main.cpp > CMakeFiles/MYGAME.dir/src/main.cpp.i
 
 CMakeFiles/MYGAME.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MYGAME.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/main.cpp -o CMakeFiles/MYGAME.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/main.cpp -o CMakeFiles/MYGAME.dir/src/main.cpp.s
 
 CMakeFiles/MYGAME.dir/src/Game/game.cpp.o: CMakeFiles/MYGAME.dir/flags.make
-CMakeFiles/MYGAME.dir/src/Game/game.cpp.o: /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Game/game.cpp
+CMakeFiles/MYGAME.dir/src/Game/game.cpp.o: /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/game.cpp
 CMakeFiles/MYGAME.dir/src/Game/game.cpp.o: CMakeFiles/MYGAME.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MYGAME.dir/src/Game/game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MYGAME.dir/src/Game/game.cpp.o -MF CMakeFiles/MYGAME.dir/src/Game/game.cpp.o.d -o CMakeFiles/MYGAME.dir/src/Game/game.cpp.o -c /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Game/game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MYGAME.dir/src/Game/game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MYGAME.dir/src/Game/game.cpp.o -MF CMakeFiles/MYGAME.dir/src/Game/game.cpp.o.d -o CMakeFiles/MYGAME.dir/src/Game/game.cpp.o -c /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/game.cpp
 
 CMakeFiles/MYGAME.dir/src/Game/game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MYGAME.dir/src/Game/game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Game/game.cpp > CMakeFiles/MYGAME.dir/src/Game/game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/game.cpp > CMakeFiles/MYGAME.dir/src/Game/game.cpp.i
 
 CMakeFiles/MYGAME.dir/src/Game/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MYGAME.dir/src/Game/game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Game/game.cpp -o CMakeFiles/MYGAME.dir/src/Game/game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/game.cpp -o CMakeFiles/MYGAME.dir/src/Game/game.cpp.s
 
 CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o: CMakeFiles/MYGAME.dir/flags.make
-CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o: /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Scene.cpp
+CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o: /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Scene.cpp
 CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o: CMakeFiles/MYGAME.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o -MF CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o.d -o CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o -c /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o -MF CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o.d -o CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o -c /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Scene.cpp
 
 CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Scene.cpp > CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Scene.cpp > CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.i
 
 CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Scene.cpp -o CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Scene.cpp -o CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.s
 
 # Object files for target MYGAME
 MYGAME_OBJECTS = \
@@ -125,7 +125,7 @@ MYGAME: CMakeFiles/MYGAME.dir/src/Game/game.cpp.o
 MYGAME: CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o
 MYGAME: CMakeFiles/MYGAME.dir/build.make
 MYGAME: CMakeFiles/MYGAME.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MYGAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MYGAME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MYGAME.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -137,6 +137,6 @@ CMakeFiles/MYGAME.dir/clean:
 .PHONY : CMakeFiles/MYGAME.dir/clean
 
 CMakeFiles/MYGAME.dir/depend:
-	cd /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/CMakeFiles/MYGAME.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles/MYGAME.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/MYGAME.dir/depend
 

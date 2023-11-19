@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Game/game.cpp" "CMakeFiles/MYGAME.dir/src/Game/game.cpp.o" "gcc" "CMakeFiles/MYGAME.dir/src/Game/game.cpp.o.d"
-  "/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Scene.cpp" "CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o" "gcc" "CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o.d"
-  "/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/main.cpp" "CMakeFiles/MYGAME.dir/src/main.cpp.o" "gcc" "CMakeFiles/MYGAME.dir/src/main.cpp.o.d"
+  "/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/game.cpp" "CMakeFiles/MYGAME.dir/src/Game/game.cpp.o" "gcc" "CMakeFiles/MYGAME.dir/src/Game/game.cpp.o.d"
+  "/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Scene.cpp" "CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o" "gcc" "CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o.d"
+  "/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/main.cpp" "CMakeFiles/MYGAME.dir/src/main.cpp.o" "gcc" "CMakeFiles/MYGAME.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

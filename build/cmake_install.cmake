@@ -1,4 +1,4 @@
-# Install script for directory: /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations
+# Install script for directory: /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

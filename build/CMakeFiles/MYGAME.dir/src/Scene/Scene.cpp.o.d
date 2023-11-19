@@ -1,5 +1,5 @@
 CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o: \
- /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Scene.cpp \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Scene.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -422,8 +422,8 @@ CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o: \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
  /usr/include/SDL2/SDL_misc.h \
- /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Scene.h \
- /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/../entt/entt.hpp \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Scene.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/../entt/entt.hpp \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
@@ -465,6 +465,6 @@ CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o: \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h /usr/include/c++/13/list \
  /usr/include/c++/13/bits/stl_list.h /usr/include/c++/13/bits/list.tcc \
- /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Entities.hpp \
- /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/Components.hpp \
- /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Scene/System.h
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Entities.hpp \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/Components.hpp \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Scene/System.h

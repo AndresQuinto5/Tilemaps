@@ -238,8 +238,8 @@ class SpriteRenderSystem : public SetupSystem, public UpdateSystem, public Rende
       std::string name;
       
       const std::string spritesheets[2] = {
-          "./assets/bulletA.png",
-          "./assets/brock.png",
+          "./assets/Titus.png",
+          "./assets/ogre.png",
       };
 
       SDL_Texture* tilesets[1];

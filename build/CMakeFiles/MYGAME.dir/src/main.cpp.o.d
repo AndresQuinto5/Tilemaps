@@ -1,5 +1,5 @@
 CMakeFiles/MYGAME.dir/src/main.cpp.o: \
- /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/main.cpp \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -150,7 +150,7 @@ CMakeFiles/MYGAME.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/imag1ne/GameEngines/SpriteAnimation/GameEngine-Sprite-Animations/src/Game/game.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/game.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
