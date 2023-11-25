@@ -32,7 +32,7 @@ struct SpriteComponent {
   float durationSeconds = 0;
   int x = 0;
   int y = 0;
-  int size = 24;
+  int size = 50;
   int lastUpdate = 0;
 };
 

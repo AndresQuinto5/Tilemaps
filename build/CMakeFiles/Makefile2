@@ -64,29 +64,151 @@ CMAKE_BINARY_DIR = /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/b
 
 # The main recursive "all" target.
 all: CMakeFiles/MYGAME.dir/all
+all: _deps/box2d-build/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: _deps/box2d-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/MYGAME.dir/clean
+clean: _deps/box2d-build/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory _deps/box2d-build
+
+# Recursive "all" directory target.
+_deps/box2d-build/all: _deps/box2d-build/src/all
+_deps/box2d-build/all: _deps/box2d-build/extern/glad/all
+_deps/box2d-build/all: _deps/box2d-build/extern/glfw/all
+_deps/box2d-build/all: _deps/box2d-build/extern/imgui/all
+_deps/box2d-build/all: _deps/box2d-build/extern/sajson/all
+_deps/box2d-build/all: _deps/box2d-build/testbed/all
+.PHONY : _deps/box2d-build/all
+
+# Recursive "preinstall" directory target.
+_deps/box2d-build/preinstall: _deps/box2d-build/src/preinstall
+_deps/box2d-build/preinstall: _deps/box2d-build/extern/glad/preinstall
+_deps/box2d-build/preinstall: _deps/box2d-build/extern/glfw/preinstall
+_deps/box2d-build/preinstall: _deps/box2d-build/extern/imgui/preinstall
+_deps/box2d-build/preinstall: _deps/box2d-build/extern/sajson/preinstall
+_deps/box2d-build/preinstall: _deps/box2d-build/testbed/preinstall
+.PHONY : _deps/box2d-build/preinstall
+
+# Recursive "clean" directory target.
+_deps/box2d-build/clean: _deps/box2d-build/src/clean
+_deps/box2d-build/clean: _deps/box2d-build/extern/glad/clean
+_deps/box2d-build/clean: _deps/box2d-build/extern/glfw/clean
+_deps/box2d-build/clean: _deps/box2d-build/extern/imgui/clean
+_deps/box2d-build/clean: _deps/box2d-build/extern/sajson/clean
+_deps/box2d-build/clean: _deps/box2d-build/testbed/clean
+.PHONY : _deps/box2d-build/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/box2d-build/extern/glad
+
+# Recursive "all" directory target.
+_deps/box2d-build/extern/glad/all: _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/all
+.PHONY : _deps/box2d-build/extern/glad/all
+
+# Recursive "preinstall" directory target.
+_deps/box2d-build/extern/glad/preinstall:
+.PHONY : _deps/box2d-build/extern/glad/preinstall
+
+# Recursive "clean" directory target.
+_deps/box2d-build/extern/glad/clean: _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/clean
+.PHONY : _deps/box2d-build/extern/glad/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/box2d-build/extern/glfw
+
+# Recursive "all" directory target.
+_deps/box2d-build/extern/glfw/all: _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/all
+.PHONY : _deps/box2d-build/extern/glfw/all
+
+# Recursive "preinstall" directory target.
+_deps/box2d-build/extern/glfw/preinstall:
+.PHONY : _deps/box2d-build/extern/glfw/preinstall
+
+# Recursive "clean" directory target.
+_deps/box2d-build/extern/glfw/clean: _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/clean
+.PHONY : _deps/box2d-build/extern/glfw/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/box2d-build/extern/imgui
+
+# Recursive "all" directory target.
+_deps/box2d-build/extern/imgui/all: _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/all
+.PHONY : _deps/box2d-build/extern/imgui/all
+
+# Recursive "preinstall" directory target.
+_deps/box2d-build/extern/imgui/preinstall:
+.PHONY : _deps/box2d-build/extern/imgui/preinstall
+
+# Recursive "clean" directory target.
+_deps/box2d-build/extern/imgui/clean: _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/clean
+.PHONY : _deps/box2d-build/extern/imgui/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/box2d-build/extern/sajson
+
+# Recursive "all" directory target.
+_deps/box2d-build/extern/sajson/all: _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/all
+.PHONY : _deps/box2d-build/extern/sajson/all
+
+# Recursive "preinstall" directory target.
+_deps/box2d-build/extern/sajson/preinstall:
+.PHONY : _deps/box2d-build/extern/sajson/preinstall
+
+# Recursive "clean" directory target.
+_deps/box2d-build/extern/sajson/clean: _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/clean
+.PHONY : _deps/box2d-build/extern/sajson/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/box2d-build/src
+
+# Recursive "all" directory target.
+_deps/box2d-build/src/all: _deps/box2d-build/src/CMakeFiles/box2d.dir/all
+.PHONY : _deps/box2d-build/src/all
+
+# Recursive "preinstall" directory target.
+_deps/box2d-build/src/preinstall:
+.PHONY : _deps/box2d-build/src/preinstall
+
+# Recursive "clean" directory target.
+_deps/box2d-build/src/clean: _deps/box2d-build/src/CMakeFiles/box2d.dir/clean
+.PHONY : _deps/box2d-build/src/clean
+
+#=============================================================================
+# Directory level rules for directory _deps/box2d-build/testbed
+
+# Recursive "all" directory target.
+_deps/box2d-build/testbed/all: _deps/box2d-build/testbed/CMakeFiles/testbed.dir/all
+.PHONY : _deps/box2d-build/testbed/all
+
+# Recursive "preinstall" directory target.
+_deps/box2d-build/testbed/preinstall:
+.PHONY : _deps/box2d-build/testbed/preinstall
+
+# Recursive "clean" directory target.
+_deps/box2d-build/testbed/clean: _deps/box2d-build/testbed/CMakeFiles/testbed.dir/clean
+.PHONY : _deps/box2d-build/testbed/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/MYGAME.dir
 
 # All Build rule for target.
-CMakeFiles/MYGAME.dir/all:
+CMakeFiles/MYGAME.dir/all: _deps/box2d-build/src/CMakeFiles/box2d.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MYGAME.dir/build.make CMakeFiles/MYGAME.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MYGAME.dir/build.make CMakeFiles/MYGAME.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=1,2,3,4 "Built target MYGAME"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=1,2 "Built target MYGAME"
 .PHONY : CMakeFiles/MYGAME.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MYGAME.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 35
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MYGAME.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 0
 .PHONY : CMakeFiles/MYGAME.dir/rule
@@ -99,6 +221,166 @@ MYGAME: CMakeFiles/MYGAME.dir/rule
 CMakeFiles/MYGAME.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MYGAME.dir/build.make CMakeFiles/MYGAME.dir/clean
 .PHONY : CMakeFiles/MYGAME.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/box2d-build/src/CMakeFiles/box2d.dir
+
+# All Build rule for target.
+_deps/box2d-build/src/CMakeFiles/box2d.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/src/CMakeFiles/box2d.dir/build.make _deps/box2d-build/src/CMakeFiles/box2d.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/src/CMakeFiles/box2d.dir/build.make _deps/box2d-build/src/CMakeFiles/box2d.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35 "Built target box2d"
+.PHONY : _deps/box2d-build/src/CMakeFiles/box2d.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/box2d-build/src/CMakeFiles/box2d.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 33
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/box2d-build/src/CMakeFiles/box2d.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 0
+.PHONY : _deps/box2d-build/src/CMakeFiles/box2d.dir/rule
+
+# Convenience name for target.
+box2d: _deps/box2d-build/src/CMakeFiles/box2d.dir/rule
+.PHONY : box2d
+
+# clean rule for target.
+_deps/box2d-build/src/CMakeFiles/box2d.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/src/CMakeFiles/box2d.dir/build.make _deps/box2d-build/src/CMakeFiles/box2d.dir/clean
+.PHONY : _deps/box2d-build/src/CMakeFiles/box2d.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/box2d-build/extern/glad/CMakeFiles/glad.dir
+
+# All Build rule for target.
+_deps/box2d-build/extern/glad/CMakeFiles/glad.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/build.make _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/build.make _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=36 "Built target glad"
+.PHONY : _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/box2d-build/extern/glad/CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 0
+.PHONY : _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/rule
+.PHONY : glad
+
+# clean rule for target.
+_deps/box2d-build/extern/glad/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/build.make _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/clean
+.PHONY : _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir
+
+# All Build rule for target.
+_deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/build.make _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/build.make _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47,48 "Built target glfw"
+.PHONY : _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 0
+.PHONY : _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/rule
+
+# Convenience name for target.
+glfw: _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/rule
+.PHONY : glfw
+
+# clean rule for target.
+_deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/build.make _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/clean
+.PHONY : _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir
+
+# All Build rule for target.
+_deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/build.make _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/build.make _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=49,50,51,52 "Built target imgui"
+.PHONY : _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 0
+.PHONY : _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/rule
+
+# Convenience name for target.
+imgui: _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/rule
+.PHONY : imgui
+
+# clean rule for target.
+_deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/build.make _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/clean
+.PHONY : _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir
+
+# All Build rule for target.
+_deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/all:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/build.make _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/build.make _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=53 "Built target sajson"
+.PHONY : _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 0
+.PHONY : _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/rule
+
+# Convenience name for target.
+sajson: _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/rule
+.PHONY : sajson
+
+# clean rule for target.
+_deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/build.make _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/clean
+.PHONY : _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/clean
+
+#=============================================================================
+# Target rules for target _deps/box2d-build/testbed/CMakeFiles/testbed.dir
+
+# All Build rule for target.
+_deps/box2d-build/testbed/CMakeFiles/testbed.dir/all: _deps/box2d-build/src/CMakeFiles/box2d.dir/all
+_deps/box2d-build/testbed/CMakeFiles/testbed.dir/all: _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/all
+_deps/box2d-build/testbed/CMakeFiles/testbed.dir/all: _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/all
+_deps/box2d-build/testbed/CMakeFiles/testbed.dir/all: _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/all
+_deps/box2d-build/testbed/CMakeFiles/testbed.dir/all: _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/all
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/testbed/CMakeFiles/testbed.dir/build.make _deps/box2d-build/testbed/CMakeFiles/testbed.dir/depend
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/testbed/CMakeFiles/testbed.dir/build.make _deps/box2d-build/testbed/CMakeFiles/testbed.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target testbed"
+.PHONY : _deps/box2d-build/testbed/CMakeFiles/testbed.dir/all
+
+# Build rule for subdir invocation for target.
+_deps/box2d-build/testbed/CMakeFiles/testbed.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 98
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/box2d-build/testbed/CMakeFiles/testbed.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles 0
+.PHONY : _deps/box2d-build/testbed/CMakeFiles/testbed.dir/rule
+
+# Convenience name for target.
+testbed: _deps/box2d-build/testbed/CMakeFiles/testbed.dir/rule
+.PHONY : testbed
+
+# clean rule for target.
+_deps/box2d-build/testbed/CMakeFiles/testbed.dir/clean:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/testbed/CMakeFiles/testbed.dir/build.make _deps/box2d-build/testbed/CMakeFiles/testbed.dir/clean
+.PHONY : _deps/box2d-build/testbed/CMakeFiles/testbed.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

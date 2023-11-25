@@ -4,8 +4,8 @@
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
-
-
+#include <box2d/box2d.h>
+#include "PhysicsComponent.h"
 
 class Game {
     public:
@@ -34,7 +34,8 @@ class Game {
         Uint32 frameEndTimeStamp;
         float frameDuration;
         float dT;
-        
+        b2World* world;
+        MyContactListener* myContactListener;
 };
 
 #endif

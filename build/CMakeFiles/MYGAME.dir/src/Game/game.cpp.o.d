@@ -301,11 +301,57 @@ CMakeFiles/MYGAME.dir/src/Game/game.cpp.o: \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
  /usr/include/SDL2/SDL_misc.h /usr/include/SDL2/SDL_image.h \
  /usr/include/SDL2/SDL.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/box2d.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_settings.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_types.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_api.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_common.h \
+ /usr/include/assert.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_draw.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_math.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_timer.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_chain_shape.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_shape.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_collision.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_circle_shape.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_edge_shape.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_polygon_shape.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_broad_phase.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_dynamic_tree.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_growable_stack.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_body.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_contact.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_fixture.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_time_step.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_world.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_block_allocator.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_contact_manager.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_stack_allocator.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_world_callbacks.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_distance_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_friction_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_gear_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_motor_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_mouse_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_prismatic_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_pulley_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_revolute_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_weld_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include/box2d/b2_wheel_joint.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/PhysicsComponent.h \
  /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/stexture.cpp \
  /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/../entt/entt.hpp \
  /usr/include/c++/13/cstdint /usr/include/c++/13/cassert \
- /usr/include/assert.h /usr/include/c++/13/algorithm \
- /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
@@ -353,15 +399,7 @@ CMakeFiles/MYGAME.dir/src/Game/game.cpp.o: \
  /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/../Scene/Components.hpp \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/glm/detail/setup.hpp /usr/include/glm/simd/platform.h \
- /usr/include/c++/13/climits \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/13/cfloat \
+ /usr/include/c++/13/climits /usr/include/c++/13/cfloat \
  /usr/include/glm/fwd.hpp /usr/include/glm/detail/qualifier.hpp \
  /usr/include/glm/detail/setup.hpp /usr/include/glm/vec2.hpp \
  /usr/include/glm/ext/vector_bool2.hpp \
@@ -476,4 +514,6 @@ CMakeFiles/MYGAME.dir/src/Game/game.cpp.o: \
  /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/../Scene/Systems.hpp \
  /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/../Scene/./System.h \
  /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/../Scene/./Scene.h \
- /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/../Scene/./Components.hpp
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/../Scene/./Components.hpp \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/../Scene/../Game/PhysicsComponent.h \
+ /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/src/Game/PhysicsSystem.h

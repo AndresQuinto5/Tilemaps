@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/_deps/box2d-src/src/../include
 
 CXX_FLAGS = 
 

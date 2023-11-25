@@ -1,24 +1,24 @@
-# Soporte de Fondos en Engine de Juegos
+# Sistema de Física para Motor de Juegos
 
 ## Objetivo del Proyecto
-El propósito de este proyecto es mejorar el motor de juegos desarrollado para soportar la implementación y manejo de fondos. El enfoque está en demostrar la capacidad del motor para dibujar y gestionar fondos de manera eficiente y adaptable a la narrativa del juego.
+El propósito de este proyecto es integrar un sistema de física dentro del motor de juegos que han estado desarrollando. Este sistema permitirá a los personajes y objetos del mundo de juego interactuar de manera realista.
 
 ## Características Principales
-- **Implementación de Fondos:** Utilizar el motor de juegos para dibujar fondos en la pantalla.
-- **Integración con la Lógica del Juego:** Incluir lógica relevante en el sistema para que los fondos complementen la narrativa y mecánicas del juego.
+- **Dibujo y Animación:** Implementación de personajes y fondos dentro del motor de juegos.
+- **Sistema de Física:** Creación o integración de un sistema de física, utilizando librerías como Box2D o desarrollando una propia.
+- **Objetos Físicos:** Inclusión de enemigos y elementos del mundo como objetos físicos (con rigid body).
+- **Interacciones Físicas:** Implementación de interacciones entre objetos, que pueden variar desde colisiones simples hasta interacciones más complejas y específicas para el juego.
 
 ## Guía de Implementación
-1. **Dibujo del Fondo:** Implementar el dibujo de un fondo utilizando el motor de juegos.
-2. **Lógica del Juego:** Asegurarse de que el fondo se integre bien con la lógica y la narrativa del juego.
+1. **Dibujo de Personajes y Fondos:** Dibujar y animar personajes y fondos en el motor de juegos.
+2. **Desarrollo o Integración de un Sistema de Física:** Utilizar una librería de física existente o desarrollar una propia para manejar las interacciones físicas en el juego.
+3. **Objetos Físicos en el Juego:** Agregar enemigos y elementos del mundo que actúen como objetos físicos.
+4. **Demostración de Interacciones:** Mostrar cómo los objetos interactúan entre sí dentro del juego.
 
 ## Documentación y Evidencia
-- **Reflexión y Conexión Narrativa:** Incluir una reflexión sobre el proceso de implementación y la importancia del fondo en la narrativa del juego.
-- **Evidencia Visual:** Añadir screenshots o, si es posible, un gif/video que muestre el fondo en acción dentro del juego.
-- **Código Fuente:** Proveer un enlace al código fuente en GitHub.
-- **Trabajo en Equipo:** Si se trabaja en grupo, implementar dos fondos independientes utilizando el motor de juegos.
+- **Reflexión y Conexión Narrativa:** Incluir una breve descripción de la implementación y su conexión con la narrativa del juego.
+- **Evidencia Visual:** Añadir screenshots o, preferiblemente, un gif/video que muestre la interacción con el sistema.
+- **Código Fuente:** Proporcionar un enlace al código fuente en GitHub.
+- **Trabajo en Equipo:** Si trabajan en grupo, implementar diferentes tipos de interacciones físicas, como interacciones con ítems y enemigos.
 
-## Entrega
-- **Portafolio Electrónico:** Utilizar la función de canvas de portafolios electrónicos para añadir una nueva página al portafolio del curso. Esta página debe incluir la evidencia de cómo se implementó el fondo.
-- **Enlace en Canvas:** Entregar el enlace a su portafolio en la plataforma Canvas.
-
-![Alt text](tiles.gif)
+![Collision EXAMPLE](collider.gif)

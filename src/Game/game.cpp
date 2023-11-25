@@ -8,6 +8,8 @@
 #include "../Scene/Entities.hpp"
 #include "../Scene/Components.hpp"
 #include "../Scene/Systems.hpp"
+#include "PhysicsComponent.h"
+#include "PhysicsSystem.h"
 
 int speed = 2;
 int player_speed = 50;
@@ -21,15 +23,21 @@ Game::Game ()
     FPS = 60;
     frameDuration = (1.0f / FPS) * 1000.0f;
     counter = 0;
-
+    world = nullptr;
 }
 
 Game::~Game ()
 {
     std::cout << "~Game" << std::endl;
+    if (world) {
+        delete myContactListener;  // Eliminar primero el contact listener
+        delete world;   
+    }
 }
+
 Uint32 fragment(Uint32 currentColor, float dT)
 {
+   
     if (currentColor == 0){
         return 0;
     }
@@ -73,6 +81,7 @@ Uint32 fragment(Uint32 currentColor, float dT)
     else{
         return 16777215;
     }
+    
 }
 Uint32 spriteBackground(Uint32 currentColor, float dT)
 {
@@ -92,14 +101,18 @@ void Game::setup(){
 
     scene->addSetupSystem(new CameraSetupSystem(4, window_width, window_height, 24 * 16 * 4, 19 * 16 * 4));
 
+    b2Vec2 gravity(0.0f, -10.0f); // Define la gravedad
+
+    world = new b2World(gravity);
+
     TileMapSystem* tileMapSystem = new TileMapSystem(renderer, window);
     scene->addSetupSystem(tileMapSystem);
     scene->addRenderSystem(tileMapSystem);
 
-    scene->addSetupSystem(new CharacterSetupSystem(renderer));
+    scene->addSetupSystem(new CharacterSetupSystem(renderer, world));
     scene->addInputSystem(new PlayerInputSystem());
 
-    scene->addSetupSystem(new EnemySetupSystem(renderer));
+    scene->addSetupSystem(new EnemySetupSystem(renderer, world));
 
     SpriteRenderSystem* spriteRenderSystem = new SpriteRenderSystem(renderer, window, FPS);
     scene->addSetupSystem(spriteRenderSystem);
@@ -108,6 +121,9 @@ void Game::setup(){
 
     scene->addUpdateSystem(new MovementUpdateSystem());
     scene->addUpdateSystem(new CameraFollowUpdateSystem());
+    
+    PhysicsSystem* physicsSystem = new PhysicsSystem(world);
+    scene->addUpdateSystem(physicsSystem);
 
     scene->setup();
     

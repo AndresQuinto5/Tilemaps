@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles /home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build//CMakeFiles/progress.marks
@@ -128,6 +173,84 @@ MYGAME: cmake_check_build_system
 MYGAME/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MYGAME.dir/build.make CMakeFiles/MYGAME.dir/build
 .PHONY : MYGAME/fast
+
+#=============================================================================
+# Target rules for targets named box2d
+
+# Build rule for target.
+box2d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 box2d
+.PHONY : box2d
+
+# fast build rule for target.
+box2d/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/src/CMakeFiles/box2d.dir/build.make _deps/box2d-build/src/CMakeFiles/box2d.dir/build
+.PHONY : box2d/fast
+
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/build.make _deps/box2d-build/extern/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/build.make _deps/box2d-build/extern/glfw/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/build.make _deps/box2d-build/extern/imgui/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+#=============================================================================
+# Target rules for targets named sajson
+
+# Build rule for target.
+sajson: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sajson
+.PHONY : sajson
+
+# fast build rule for target.
+sajson/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/build.make _deps/box2d-build/extern/sajson/CMakeFiles/sajson.dir/build
+.PHONY : sajson/fast
+
+#=============================================================================
+# Target rules for targets named testbed
+
+# Build rule for target.
+testbed: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testbed
+.PHONY : testbed
+
+# fast build rule for target.
+testbed/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/box2d-build/testbed/CMakeFiles/testbed.dir/build.make _deps/box2d-build/testbed/CMakeFiles/testbed.dir/build
+.PHONY : testbed/fast
 
 src/Game/game.o: src/Game/game.cpp.o
 .PHONY : src/Game/game.o
@@ -208,8 +331,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... MYGAME"
+	@echo "... box2d"
+	@echo "... glad"
+	@echo "... glfw"
+	@echo "... imgui"
+	@echo "... sajson"
+	@echo "... testbed"
 	@echo "... src/Game/game.o"
 	@echo "... src/Game/game.i"
 	@echo "... src/Game/game.s"

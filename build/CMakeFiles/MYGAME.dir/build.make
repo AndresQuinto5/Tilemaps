@@ -124,6 +124,7 @@ MYGAME: CMakeFiles/MYGAME.dir/src/main.cpp.o
 MYGAME: CMakeFiles/MYGAME.dir/src/Game/game.cpp.o
 MYGAME: CMakeFiles/MYGAME.dir/src/Scene/Scene.cpp.o
 MYGAME: CMakeFiles/MYGAME.dir/build.make
+MYGAME: _deps/box2d-build/bin/libbox2d.a
 MYGAME: CMakeFiles/MYGAME.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/imag1ne/GameEngines/tilemaps/Sprite-animation-systems/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MYGAME"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MYGAME.dir/link.txt --verbose=$(VERBOSE)
